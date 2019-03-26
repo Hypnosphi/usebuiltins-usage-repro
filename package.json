@@ -7,22 +7,23 @@
     "start": "babel index.js -d dist && node dist/index.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2"
   },
   "babel": {
     "presets": [
       [
         "@babel/preset-env",
         {
-          "useBuiltIns": "usage"
+          "useBuiltIns": "usage",
+          "corejs": 3
         }
       ]
     ]
   },
   "dependencies": {
-    "core-js": "^2.6.1",
-    "regenerator-runtime": "^0.13.1"
+    "core-js": "^3.0.0",
+    "regenerator-runtime": "^0.13.2"
   }
 }
